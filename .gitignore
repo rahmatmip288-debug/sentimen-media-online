@@ -1,0 +1,60 @@
+# ==============================================================================
+# .gitignore - Aplikasi Analisis Sentimen Berita Pemkab Bangka
+# ==============================================================================
+
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# --- Flask & Web App ---
+instance/
+.webassets-cache
+*.log
+local_settings.py
+
+# --- Environment Variables & Secrets (API Keys, DB Credentials) ---
+.env
+.env.local
+.env.*.local
+
+# --- Scraping, Datasets & Sentiment Models ---
+# Ignore large scraped data or local databases to keep the repo lightweight
+*.csv
+*.xlsx
+*.json
+*.db
+*.sqlite
+*.sqlite3
+data/
+scraped_data/
+models/
+*.pkl
+*.joblib
+
+# --- Jupyter Notebooks (if used for sentiment model testing) ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- IDE & Editor Configurations ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
